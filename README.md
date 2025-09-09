@@ -1,8 +1,8 @@
-# Shuttle Python 🐍
+# Shuttle Cobra 🐍
 
 ![CI Status](https://img.shields.io/badge/CI-passing-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
 
-Shuttle Python is a framework that empowers you to effortlessly deploy your
+Shuttle Cobra is a framework that empowers you to effortlessly deploy your
 Python applications and their required AWS infrastructure with a delightful,
 Python-native development experience.
 
@@ -26,7 +26,7 @@ building, and deployment to AWS.
 ## 🚀 Getting Started
 
 Follow these steps to set up your environment and deploy your first Shuttle
-Python application.
+Cobra application.
 
 ### Prerequisites
 
@@ -65,7 +65,7 @@ source .venv/bin/activate
 
 # Install Shuttle CLI and its dependencies
 uv init
-uv add shuttle-python
+uv add shuttle-cobra
 ```
 
 ### Invoking Shuttle Commands
@@ -163,12 +163,12 @@ uv run -m shuttle destroy
 
 ## 🛠️ Development
 
-To set up the development environment for Shuttle Python:
+To set up the development environment for Shuttle Cobra:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/shuttle/shuttle-python.git # Replace with actual repo URL
-    cd shuttle-python
+    git clone https://github.com/shuttle/shuttle-cobra.git # Replace with actual repo URL
+    cd shuttle-cobra
     ```
 2.  **Create and activate a virtual environment:**
     ```bash
@@ -203,7 +203,7 @@ more details on how to get involved.
 *   **Community:** Join our community forum or Discord channel (links to be
     provided).
 *   **Issue Tracker:** Report bugs or request features on our [GitHub
-    Issues](https://github.com/shuttle/shuttle-python/issues).
+    Issues](https://github.com/shuttle/shuttle-cobra/issues).
 
 ## 📄 License
 
