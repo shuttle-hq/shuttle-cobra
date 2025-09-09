@@ -31,8 +31,8 @@ def discover_project_and_infra(path_str: str):
         raise FileNotFoundError("No venv found in project or parents")
     logging.debug("Found venv in", parent)
 
-    # If we're running the user-project outside of shuttle-python,
-    # this should resolve to the Dockerfile inside of shuttle-python
+    # If we're running the user-project outside of shuttle-cobra,
+    # this should resolve to the Dockerfile inside of shuttle-cobra
     if not (_ := Path(build.__file__).parent.joinpath("Dockerfile")).exists():
         raise FileNotFoundError("No Dockerfile found in project root")
     logging.debug("Found Dockerfile in", Path(build.__file__).parent)

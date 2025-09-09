@@ -620,7 +620,7 @@ wheels = [
 ]
 
 [[package]]
-name = "shuttle-python"
+name = "shuttle-cobra"
 version = "0.1.1"
 source = { editable = "." }
 dependencies = [
