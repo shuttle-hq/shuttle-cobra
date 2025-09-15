@@ -2,7 +2,7 @@
 
 ## Welcome
 
-* [Introduction](README.md)
+* [Introduction](./README.md)
 
 ## Getting Started
 
