@@ -198,12 +198,12 @@ more details on how to get involved.
 ## ❤️ Support & Community
 
 *   **Documentation:** Visit the official Shuttle [Python
-    documentation](https://docs.shuttle.dev/python/welcome/introduction) for in-depth guides and API
+    documentation](https://docs.cobra.shuttle.dev/) for in-depth guides and API
     references.
 *   **Community:** Join our community forum or Discord channel (links to be
     provided).
 *   **Issue Tracker:** Report bugs or request features on our [GitHub
-    Issues](https://github.com/shuttle/shuttle-cobra/issues).
+    Issues](https://github.com/shuttle-hq/shuttle-cobra/issues).
 
 ## 📄 License
 

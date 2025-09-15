@@ -407,4 +407,3 @@ Continue your Shuttle journey:
 2. **Advanced Data Processing**: Dive deeper into using Python libraries like `pandas`, `dask`, or other data tools with Shuttle.
 3. **Monitor Your Task**: Learn how to integrate with monitoring solutions for your deployed tasks.
 
-\
