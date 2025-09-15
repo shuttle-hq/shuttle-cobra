@@ -76,4 +76,3 @@ icon: bolt
     uv run -m shuttle destroy
     ```
 
-\

@@ -262,4 +262,3 @@ For additional support:
 * [GitHub Issues](https://github.com/shuttle-hq/shuttle/issues)
 * [Documentation](https://docs.shuttle.dev/)
 
-\

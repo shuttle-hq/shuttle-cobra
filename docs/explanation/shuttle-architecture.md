@@ -144,4 +144,3 @@ Shuttle's architecture provides several key advantages:
 
 Understanding these architectural principles helps you make the most of Shuttle's capabilities and design applications that leverage the platform's strengths.
 
-\
