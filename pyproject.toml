@@ -34,8 +34,8 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://shuttle.dev/"
-Documentation = "https://docs.shuttle.dev/python/welcome/introduction"
-Repository = "https://github.com/shuttle-hq/shuttle-cobra"
+Documentation = "https://docs.cobra.shuttle.dev/"
+Repository = "https://github.com/shuttle-hq/shuttle-cobra/"
 
 [project.scripts]
 shuttle = "shuttle.__main__:app"
