@@ -56,5 +56,3 @@ For managing dependencies and running Shuttle commands within your projects, it 
     shuttle logs
     shuttle local
     ```
-
-\
