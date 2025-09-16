@@ -38,11 +38,11 @@ icon: bolt
 
     ```bash
     uv init
-    uv add shuttle-python
+    uv add shuttle-cobra
     ```
 6.  **Create Your Shuttle Project** There is no `shuttle init` command for Python projects. Instead, you must create your project files manually.
 
-    Create a `main.py` file: you can use the [built-in user-project example](https://github.com/shuttle-hq/shuttle-python/blob/main/user-project/__main__.py) as a starting point.
+    Create a `main.py` file: you can use the [built-in user-project example](https://github.com/shuttle-hq/shuttle-cobra/blob/main/user-project/__main__.py) as a starting point.
 7.  **Deploy Your Project** Deploy your application to the Shuttle platform:
 
     ```bash

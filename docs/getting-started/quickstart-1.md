@@ -37,7 +37,7 @@ For managing dependencies and running Shuttle commands within your projects, it 
 
     ```bash
     uv init
-    uv add shuttle-python
+    uv add shuttle-cobra
     ```
 3.  Run Shuttle Commands:
 
