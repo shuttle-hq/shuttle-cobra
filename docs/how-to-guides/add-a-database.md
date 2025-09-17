@@ -7,7 +7,7 @@ icon: database
 
 ## Add a Dedicated Database
 
-Add a managed, dedicated Postgres database to your Shuttle Python project. This allows your application to persist data, serving as a robust and scalable relational database solution without needing to manage the underlying infrastructure yourself. Shuttle automatically handles provisioning, scaling, and connection management.
+Add a managed, dedicated Postgres database to your Shuttle Cobra project. This allows your application to persist data, serving as a robust and scalable relational database solution without needing to manage the underlying infrastructure yourself. Shuttle automatically handles provisioning, scaling, and connection management.
 
 ### Prerequisites
 
@@ -18,7 +18,7 @@ Add a managed, dedicated Postgres database to your Shuttle Python project. This 
 
 ### Instructions: Provisioning a Dedicated Postgres Database
 
-This guide will walk you through adding a dedicated Postgres database to your Shuttle Python application.
+This guide will walk you through adding a dedicated Postgres database to your Shuttle Cobra application.
 
 #### 1. Install Dependencies
 
@@ -26,7 +26,7 @@ First, add the `shuttle-db[postgres]` package to your project using `uv`:
 
 ```bash
 uv init
-uv add shuttle-python
+uv add shuttle-cobra
 ```
 
 This will install the necessary `shuttle-rds` package and its Postgres-specific dependencies, including database drivers like `psycopg`.

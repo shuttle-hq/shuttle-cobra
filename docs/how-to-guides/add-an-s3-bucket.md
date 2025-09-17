@@ -1,13 +1,13 @@
 ---
 description: >-
   Step-by-step guide to adding and configuring an S3 bucket in your Shuttle
-  Python project.
+  Cobra project.
 icon: folder
 ---
 
 # Add an S3 Bucket
 
-Add a managed S3 bucket to your Shuttle Python project. This allows your application to store and retrieve objects, serving as a flexible and cost-effective object storage solution.
+Add a managed S3 bucket to your Shuttle Cobra project. This allows your application to store and retrieve objects, serving as a flexible and cost-effective object storage solution.
 
 ### Prerequisites
 
@@ -18,7 +18,7 @@ Add a managed S3 bucket to your Shuttle Python project. This allows your applica
 
 ### Instructions: Provisioning an S3 Bucket
 
-This guide will walk you through adding an S3 bucket to your Shuttle Python application.
+This guide will walk you through adding an S3 bucket to your Shuttle Cobra application.
 
 #### 1. Install Dependencies
 
@@ -26,7 +26,7 @@ First, add the `shuttle-aws[s3]` package to your project using `uv`:
 
 ```bash
 uv init
-uv add shuttle-python
+uv add shuttle-cobra
 ```
 
 This will install the necessary `shuttle-aws` package and its S3-specific dependencies, including `boto3`.
@@ -43,7 +43,7 @@ import shuttle_runtime
 from shuttle_aws.s3 import Bucket, BucketOptions
 
 # Define a constant for your desired bucket name
-BUCKET_NAME = "my-shuttle-python-bucket"
+BUCKET_NAME = "my-shuttle-cobra-bucket"
 
 @shuttle_task.cron(schedule="0 * * * ? *") # This task will run hourly
 async def main(
@@ -71,7 +71,7 @@ async def main(
             print(f"No objects found in '{BUCKET_NAME}'.")
 
         # Example: Put a simple object
-        s3_client.put_object(Bucket=BUCKET_NAME, Key="hello.txt", Body="Hello from Shuttle Python!")
+        s3_client.put_object(Bucket=BUCKET_NAME, Key="hello.txt", Body="Hello from Shuttle Cobra!")
         print("Successfully put 'hello.txt' into the bucket.")
 
     except Exception as e:
@@ -95,7 +95,7 @@ import shuttle_runtime
 import shuttle_task
 from shuttle_aws.s3 import Bucket, BucketOptions, AllowWrite
 
-BUCKET_NAME = "my-shuttle-python-bucket"
+BUCKET_NAME = "my-shuttle-cobra-bucket"
 
 @shuttle_task.cron("0 * * * ? *")
 async def main(
@@ -131,13 +131,13 @@ Deploying...
 Deploy complete! Resources created:
 
 - shuttle_aws.s3.Bucket
-    id  = "my-shuttle-python-bucket-abcdef12"
-    arn = "arn:aws:s3:::my-shuttle-python-bucket-abcdef12"
+    id  = "my-shuttle-cobra-bucket-abcdef12"
+    arn = "arn:aws:s3:::my-shuttle-cobra-bucket-abcdef12"
 
 - shuttle_task.cron
-    id        = "my-shuttle-python-task-abcdef12"
+    id        = "my-shuttle-cobra-task-abcdef12"
     schedule  = "0 * * * *"
-    arn       = "arn:aws:ecs:eu-west-2:123456789012:task/my-shuttle-python-project/...
+    arn       = "arn:aws:ecs:eu-west-2:123456789012:task/my-shuttle-cobra-project/...
 
 Use `uv run -m shuttle logs` to view logs.
 ```
@@ -168,5 +168,5 @@ Shuttle will execute your Python application locally. For S3 buckets, `shuttle r
 ### Next Steps
 
 * [Add other resources](https://github.com/shuttle-hq/shuttle-docs/blob/729fe2dfad2adc441b3d69cf0696c3fe60825503/reference/resources) like a managed database or secrets.
-* Learn more about the [Shuttle Python framework](https://github.com/shuttle-hq/shuttle-docs/blob/729fe2dfad2adc441b3d69cf0696c3fe60825503/getting-started/python).
-* Explore [Shuttle Python examples](https://github.com/shuttle-hq/shuttle-docs/blob/729fe2dfad2adc441b3d69cf0696c3fe60825503/examples/overview) for more advanced use cases.
+* Learn more about the [Shuttle Cobra framework](https://github.com/shuttle-hq/shuttle-docs/blob/729fe2dfad2adc441b3d69cf0696c3fe60825503/getting-started/python).
+* Explore [Shuttle Cobra examples](https://github.com/shuttle-hq/shuttle-docs/blob/729fe2dfad2adc441b3d69cf0696c3fe60825503/examples/overview) for more advanced use cases.

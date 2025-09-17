@@ -18,7 +18,7 @@ It is recommended to use `uv` for dependency management and running the Shuttle 
 ```bash
 uv venv
 source .venv/bin/activate
-uv add shuttle-python
+uv add shuttle-cobra
 ```
 
 Once installed, you can invoke the Shuttle CLI using `uv run -m shuttle`. If your virtual environment is activated, you can also run commands directly using `shuttle`. For example:
@@ -145,7 +145,7 @@ shuttle logs my-project # View logs for a project located in 'my-project' direct
 
 ### Environment Variables
 
-The Shuttle Python CLI primarily relies on AWS authentication configured in your environment.
+The Shuttle Cobra CLI primarily relies on AWS authentication configured in your environment.
 
 | Variable                | Description                                                                               |
 | ----------------------- | ----------------------------------------------------------------------------------------- |
@@ -161,14 +161,14 @@ You can configure your AWS credentials using `aws configure` or `aws configure s
 
 #### `pyproject.toml` (and project structure)
 
-Shuttle Python projects are standard Python projects, typically managed with `pyproject.toml`. Your application code, including `@shuttle_task.cron` decorated functions, resides within your project's Python source files (e.g., `main.py` or `src/my_project/task.py`).
+Shuttle Cobra projects are standard Python projects, typically managed with `pyproject.toml`. Your application code, including `@shuttle_task.cron` decorated functions, resides within your project's Python source files (e.g., `main.py` or `src/my_project/task.py`).
 
 ```toml
 [project]
 name = "my-shuttle-project"
 version = "0.1.0"
 dependencies = [
-    "shuttle-python",
+    "shuttle-cobra",
     # ... other dependencies
 ]
 ```
@@ -181,7 +181,7 @@ dependencies = [
 uv venv
 source .venv/bin/activate
 uv add shuttle
-# Add your Shuttle Python code and dependencies (e.g., shuttle-aws, shuttle-db)
+# Add your Shuttle Cobra code and dependencies (e.g., shuttle-aws, shuttle-db)
 uv run -m shuttle deploy  # Deploy to AWS infrastructure managed by Shuttle
 # OR
 shuttle deploy

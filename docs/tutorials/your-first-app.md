@@ -63,7 +63,7 @@ Now, add the `shuttle` dependency to your project. `uv` will automatically creat
 
 ```bash
 uv init
-uv add shuttle-python
+uv add shuttle-cobra
 ```
 
 Finally, create the main application file `main.py` with the following content:
