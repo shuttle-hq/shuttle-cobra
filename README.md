@@ -1,6 +1,6 @@
 # Shuttle Cobra 🐍
 
-![CI Status](https://img.shields.io/badge/CI-passing-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
+![CI Status](https://img.shields.io/badge/CI-passing-brightgreen) ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 
 Shuttle Cobra is a framework that empowers you to effortlessly deploy your
 Python applications and their required AWS infrastructure with a delightful,
